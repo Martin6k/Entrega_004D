@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'view2',
+    loadChildren: () => import('./view2/view2.module').then( m => m.View2PageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'res-password',
+    loadChildren: () => import('./res-password/res-password.module').then( m => m.ResPasswordPageModule)
+  },
 ];
 
 @NgModule({
