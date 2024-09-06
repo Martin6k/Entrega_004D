@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./res-password.page.scss'],
 })
 export class ResPasswordPage implements OnInit {
-
+public password : string= '';
+public nombre : string ='';
   constructor() { }
 
   ngOnInit() {
