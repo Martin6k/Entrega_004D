@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-res-password',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResPasswordPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {
+   }
+   navigateToLogin() {
+    this.navCtrl.navigateForward('/home', {
+    });
+  }
 
   ngOnInit() {
+    
   }
 
 }
