@@ -26,4 +26,11 @@ export class HomePage {
     this.navCtrl.navigateForward('/inicio', {
       queryParams: { nombre: this.nombre }
     });
-  }}
+  }
+  navigateToMain() {
+    this.navCtrl.navigateForward('/main', {
+      queryParams: { nombre: this.nombre }
+    });
+  }
+
+  }

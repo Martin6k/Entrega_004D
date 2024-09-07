@@ -1,5 +1,5 @@
 <!-- home.page.html -->
-<ion-header [translucent]="true">
+<ion-header color="mycolor" [translucent]="true">
   <ion-toolbar>
     <ion-title>
       login
@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content padding class="background" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">login duoc</ion-title>
@@ -15,13 +15,14 @@
   </ion-header>
   
   <ion-item>
-    <ion-label position="floating">Ingresa tu nombre de usuario</ion-label>
+    <ion-label  color="mycolor" position="floating">Ingresa tu nombre de usuario</ion-label>
     <ion-input [(ngModel)]="nombre"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Ingresa contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-input-password-toggle slot="end"></ion-input-password-toggle>
   </ion-item>
 
   <ion-item>
@@ -29,5 +30,8 @@
   </ion-item>
   <ion-item>
     <ion-button [routerLink]="['/res-password']">Restablecer contraseña</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="navigateToMain()">Volver</ion-button>
   </ion-item>
 </ion-content>
