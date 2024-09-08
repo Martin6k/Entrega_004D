@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'main',
     pathMatch: 'full'
   },
   {
@@ -23,6 +23,15 @@ const routes: Routes = [
     path: 'res-password',
     loadChildren: () => import('./res-password/res-password.module').then( m => m.ResPasswordPageModule)
   },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+
+
+
+
+
 ];
 
 @NgModule({
