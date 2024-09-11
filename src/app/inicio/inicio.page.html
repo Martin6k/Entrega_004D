@@ -1,11 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>inicio</ion-title>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>Inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content>
 
-  <p>Bienvenido {{ nombre }}</p>
+ Bienvenido {{ nombre }}
 </ion-content>
+<ion-item>
+  <ion-button (click)="navigateToLogin()">Volver</ion-button>
+</ion-item>

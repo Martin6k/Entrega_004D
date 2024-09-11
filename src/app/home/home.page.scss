@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+
+ion-title{
+
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 #ab7a00,  
+    1px -1px 0 #ab7a00,
+    -1px 1px 0 #ab7a00,
+    1px 1px 0 #ab7a00;}
+
+.custom-text{  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 #e9a700,  
+    1px -1px 0 #e9a700,
+    -1px 1px 0 #e9a700,
+    1px 1px 0 #e9a700;}
+.custom-toolbar {
+  --background: #000000;
+  --color:#eeff00;
+  --border-color:#ffffff;
+ border-style:dotted;
+}
+
+ion-button {
+  --background: #2900ca;
+  --background-hover: #000000;
+  --background-activated: #000000;
+  --background-focused: #000000;
+
+  --color: rgb(255, 255, 255);
+
+  --border-radius: 0;
+  --border-color: #ffffff;
+  --border-style: solid;
+  --border-width: 1px;
+
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+
+  --ripple-color: deeppink;
+
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}
