@@ -1,7 +1,36 @@
 ion-content.background{
     --ion-background-color:#000000;
     --ion-text-color:#ffffff;
+
   }
+ion-content{
+  font-size: 200%;
+  color: #ffffff;
+  text-shadow: 
+  -1px -1px 0 #e9a700,  
+  1px -1px 0 #e9a700,
+  -1px 1px 0 #e9a700,
+  1px 1px 0 #e9a700;
+}
+  ion-title{
+
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 
+      -1px -1px 0 #ab7a00,  
+      1px -1px 0 #ab7a00,
+      -1px 1px 0 #ab7a00,
+      1px 1px 0 #ab7a00;}
+
+
+      ion-toolbar {
+        --background: #000000;
+        --color:#eeff00;
+        --border-color:#ffffff;
+       border-style:dotted;
+      }
+      
   ion-button {
     --background: #000000;
     --background-hover: #000000;
